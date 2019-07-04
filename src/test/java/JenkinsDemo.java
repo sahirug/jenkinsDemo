@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class JenkinsDemo
 {
-    private static String Base_Url = "https://www.facebook.com";
+    private static String Base_Url = "https://www.google.com";
     private WebDriver driver;
 
     @Before
@@ -32,7 +32,7 @@ public class JenkinsDemo
     @Test
     public void testCasePassed()
     {
-        Assert.assertTrue(driver.findElement(By.xpath("//form[@id='login_form']")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id='tsf']/div[2]/div/div[1]/div/div[1]/input")).isDisplayed());
     }
 
     @Test
